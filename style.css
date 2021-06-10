@@ -1,0 +1,66 @@
+body {
+    background-color:azure;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameholder {
+    width: 30vw;
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+}
+
+#board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 33.333333%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.boxes {
+    width: 31%;
+    height: 8vw;
+    border: 0.5px black solid;
+}
+
+.boxes:first-child, .boxes:nth-child(2), .boxes:nth-child(3) {
+    border-top: none;
+}
+
+.boxes:first-child, .boxes:nth-child(4), .boxes:nth-child(7) {
+    border-left: none;
+}
+
+.boxes:nth-child(7), .boxes:nth-child(8), .boxes:nth-child(9) {
+    border-bottom: none;
+}
+
+.boxes:nth-child(3),
+.boxes:nth-child(6),
+.boxes:nth-child(9) {
+    border-right: none;
+}
+
+.gameover {
+    color: green;
+}
+
+a {
+    color: green;
+    transition: color 0.2s linear;
+}
+
+a:hover {
+    color: rgb(1, 167, 1);
+}
